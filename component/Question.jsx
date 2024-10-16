@@ -9,11 +9,11 @@ const Question = ({question,index,setSelect}) => {
       setSelect(indexof,option)
     }
   return (
-    <div>
+    <div className="m-4">
         {question && <div>
                 <p>{question.question} </p>
                 {question.options.map((option, i) => (
-                  <div key={i}>
+                  <div className="m-2" key={i}>
                     <label>
                     <input
                       type="radio"

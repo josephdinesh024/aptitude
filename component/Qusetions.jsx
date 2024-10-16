@@ -50,7 +50,10 @@ const Questions = (topic) => {
   }
   
   if (loading) {
-    return <p>Loading questions...</p>;
+    return <div className='flex'>
+      <p className='text-xl'>Loading questions</p>
+      <span className="loading loading-dots loading-xs"></span>
+      </div>;
   }
 
   if (error) {

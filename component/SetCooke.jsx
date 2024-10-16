@@ -1,6 +1,7 @@
 'use server'
-import { redirectResult } from '@/action/action';
+
 import { cookies } from 'next/headers';
+import { redirect } from 'next/navigation';
 
 
 export const setCookies = (score) =>{
@@ -13,5 +14,7 @@ export const setCookies = (score) =>{
     cookeData.push(score)
 
     cookies().set('score',JSON.stringify(cookeData));
+
+    redirect('/result')
     
 }

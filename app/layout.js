@@ -19,7 +19,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="nord" className="artboard artboard-horizontal phone-4" >
+    <html lang="en" data-theme="nord" className="artboard artboard-horizontal" >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
