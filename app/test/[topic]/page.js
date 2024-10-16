@@ -35,7 +35,7 @@ const Questions = ({params}) => {
     };
 
     fetchQuestions();
-  }, []); 
+  },[]); 
 
   const setselect = (questionIndex,selectOption) =>{
     if(questions[questionIndex].answer===selectOption && questions[questionIndex].correctAns != 1){
